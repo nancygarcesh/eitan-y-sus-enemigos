@@ -1,0 +1,72 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 12px 12px 0 0;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button.active {
+  background-color: #6200ea;
+  color: white;
+}
+
+.tabs button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.tab-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #6200ea;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
