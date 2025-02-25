@@ -43,7 +43,7 @@ npm install
 
 Inicia el servidor:
 
-npm start
+node index.js
 
 El servidor estará corriendo en http://localhost:5000.
 
