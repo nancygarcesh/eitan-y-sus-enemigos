@@ -4,15 +4,17 @@ const OrganizationList = ({ organizations, onSelect }) => {
   return (
     <div>
       <h2>Selecciona una Organización</h2>
-      <ul>
+      <select onChange={(e) => onSelect(e.target.value)} defaultValue="">
+        <option value="" disabled>Selecciona una organización</option>
         {organizations.map((org) => (
-          <li key={org.accountId}>
-            <button onClick={() => onSelect(org.accountName)}>{org.accountName}</button>
-          </li>
+          <option key={org.accountId} value={org.accountName}>
+            {org.accountName}
+          </option>
         ))}
-      </ul>
+      </select>
     </div>
   );
 };
+
 
 export default OrganizationList;

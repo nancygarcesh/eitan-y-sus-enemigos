@@ -4,11 +4,18 @@ const ProjectList = ({ projects }) => {
   return (
     <div>
       <h2>Proyectos</h2>
-      <ul>
-        {projects.map((project) => (
-          <li key={project.id}>{project.name}</li>
-        ))}
-      </ul>
+      {projects.length > 0 ? (
+        <select>
+          <option value="" disabled>Selecciona un proyecto</option>
+          {projects.map((project) => (
+            <option key={project.id} value={project.name}>
+              {project.name}
+            </option>
+          ))}
+        </select>
+      ) : (
+        <p>No hay proyectos disponibles.</p>
+      )}
     </div>
   );
 };

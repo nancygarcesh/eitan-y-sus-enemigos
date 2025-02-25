@@ -9,7 +9,7 @@ const TokenInput = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form-container">
       <h2>Introduce tu Token de Acceso</h2>
       <input
         type="password"
